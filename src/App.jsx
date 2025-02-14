@@ -6,10 +6,10 @@ import Heart from "./assets/heart.svg";
 import GifOne from "./assets/love1.gif";
 import GifTwo from "./assets/love2.gif";
 import GifThree from "./assets/love3.gif";
-import { useState} from "react";
-import GifSadOne from "./assets/sad1.gif"
-import GifSadTwo from "./assets/sad2.gif"
-import GifSadThree from "./assets/sad3.gif"
+import { useState } from "react";
+import GifSadOne from "./assets/sad1.gif";
+import GifSadTwo from "./assets/sad2.gif";
+import GifSadThree from "./assets/sad3.gif";
 
 function App() {
   const messages = [
@@ -22,7 +22,7 @@ function App() {
   ];
 
   const [noText, setNoText] = useState("NO 💔");
-  const [siText, setSiText] = useState("SHI ❤️");
+  const [siText, setSiText] = useState("CHI ❤️");
   const [clickCount, setClickCount] = useState(0);
   const [showNoButton, setShowNoButton] = useState(true);
   const [isSad, setIsSad] = useState(false);
@@ -34,14 +34,14 @@ function App() {
       setIsSad(true);
     } else {
       setShowNoButton(false);
-      setSiText("NO TE QUEDA DE OTRA QUE DECIR SHI ❤️");
+      setSiText("NO TE QUEDA DE OTRA QUE DECIR CHI ❤️");
     }
   };
 
   const handleSiClick = () => {
     setIsSad(false);
     setSiText("❤️😭✨ WIIIII ✨😭❤️");
-  }
+  };
 
   return (
     <>
@@ -74,18 +74,17 @@ function App() {
       </div>
 
       <div className="container">
-        <img src={isSad ? GifSadTwo :GifOne} alt="gif" className="image-box" />
+        <img src={isSad ? GifSadTwo : GifOne} alt="gif" className="image-box" />
         <div className="content">
           <h2>¡ERES LA PERSONA INDICADA! ✨</h2>
           <p>
-            Se ha descubierto que <span id="red-text">Matty</span> es la
-            persona más especial del universo. Su sonrisa tiene el poder de
-            iluminar cualquier día, su ternura derrite corazones y su presencia
-            convierte lo cotidiano en algo mágico. Fuentes cercanas confirman
-            que su risa es altamente contagiosa y que su amor es el más valioso
-            tesoro jamás encontrado. Estudios recientes aseguran que su sola
-            existencia hace del mundo un lugar mejor. Este periódico no tiene
-            dudas:
+            Se ha descubierto que <span id="red-text">Matty</span> es la persona
+            más especial del universo. Su sonrisa tiene el poder de iluminar
+            cualquier día, su ternura derrite corazones y su presencia convierte
+            lo cotidiano en algo mágico. Fuentes cercanas confirman que su risa
+            es altamente contagiosa y que su amor es el más valioso tesoro jamás
+            encontrado. Estudios recientes aseguran que su sola existencia hace
+            del mundo un lugar mejor. Este periódico no tiene dudas:
           </p>
           <p id="bold-text">¡Eres la persona indicada! ❤️</p>
         </div>
@@ -107,7 +106,11 @@ function App() {
             “Si este es el crimen, que me condenen a amarlo por siempre.” ❤️
           </p>
         </div>
-        <img src={isSad ? GifSadThree :GifTwo} alt="gif" className="image-box" />
+        <img
+          src={isSad ? GifSadThree : GifTwo}
+          alt="gif"
+          className="image-box"
+        />
       </div>
 
       <hr />
@@ -131,25 +134,32 @@ function App() {
       <hr className="red" />
 
       <div className="buttons-container">
-      <button className="chi-button" onClick={handleSiClick}>{siText}</button>
-      {showNoButton && (
-        <button className="no-button" onClick={handleNoClick}>{noText}</button>
-      )}
-    </div>
+        <button className="chi-button" onClick={handleSiClick}>
+          {siText}
+        </button>
+        {showNoButton && (
+          <button className="no-button" onClick={handleNoClick}>
+            {noText}
+          </button>
+        )}
+      </div>
 
       <hr />
 
       <div className="container-note">
-      <img src={isSad ? GifSadOne : GifThree} alt="gif" className="image-box" />
+        <img
+          src={isSad ? GifSadOne : GifThree}
+          alt="gif"
+          className="image-box"
+        />
         <div className="content-note">
           <h2>Nota Especial – Carta de Amor 💌</h2>
           <p>
-            Desde el primer momento en que interractuamos, supe que mi vida no
-            volvería a ser la misma. No hay palabras suficientes para describir
-            lo que siento por ti, pero aquí está mi intento: eres mi luz, mi
-            refugio, eres mi mundo y mi razón para sonreír. Cada día contigo es
-            una página dorada en mi historia, y solo quiero seguir escribiendo
-            contigo.
+            Desde el primer momento supe que mi vida no sería la misma. No hay
+            palabras suficientes para describir lo que siento por ti, pero aquí
+            está mi intento: eres mi luz, mi refugio, eres mi mundo y mi razón
+            para sonreír. Cada día contigo es una página dorada en mi historia,
+            y solo quiero seguir escribiendo contigo.
           </p>
           <p id="grand-text">te amo muuucho</p>
         </div>
@@ -161,9 +171,9 @@ function App() {
       <div className="banner">
         <span className="footer-text">
           Detallito humilde creado con mucho amor por Sandi, para su persona
-          especial y que ama con todo su corazón. Si lees esto <span>¿Quieres casarte
-          conmigo?
-        </span></span>
+          especial y que ama con todo su corazón. Si lees esto{" "}
+          <span>¿Quieres casarte conmigo?</span>
+        </span>
       </div>
 
       <br />
