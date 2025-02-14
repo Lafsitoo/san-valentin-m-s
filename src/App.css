@@ -1,0 +1,367 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Playball&display=swap");
+
+:root {
+  --color-red: #e75345;
+}
+
+.header-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.5rem;
+  padding: 0.3rem;
+}
+
+#title-img {
+  width: 75%;
+}
+
+.heart-left {
+  width: 3rem;
+  margin-top: 1rem;
+}
+
+.heart-right {
+  width: 3rem;
+  margin-bottom: 1rem;
+}
+
+hr {
+  margin: 0 1rem 0 1rem;
+  border: 0;
+  height: 2px;
+  background-color: black;
+}
+
+.details-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Noto Serif", serif;
+  margin: 0.2rem 1.5rem 0.2rem 1.5rem;
+}
+
+.title-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-bottom: -3rem;
+}
+
+.title {
+  font-family: "Anton", sans-serif;
+  font-size: 16vw;
+  margin: 0;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 15vw;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 15vw;
+  }
+}
+
+.title-two {
+  font-family: "playball", sans-serif;
+  color: var(--color-red);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  font-size: 17vw;
+  margin-top: -1.5rem;
+  text-align: center;
+}
+
+.red {
+  margin: 0 1rem 0 1rem;
+  border: 0;
+  height: 2px;
+  background-color: var(--color-red);
+}
+
+.banner {
+  background-color: var(--color-red);
+  color: white;
+  font-family: "Noto Serif";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-align: center;
+  margin: 0.2rem 1rem 0.2rem 1rem;
+  padding: 0.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 0 1rem 1rem 1rem;
+  max-width: 600px;
+}
+
+.image-box {
+  width: 40%;
+  height: 40%;
+}
+
+.content h2 {
+  color: #000;
+  font-family: "anton", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+}
+
+.content p {
+  color: #000;
+  font-family: "Noto Serif";
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+  line-height: 12px;
+}
+
+@media (max-width: 480px) {
+  .content h2 {
+    font-size: 15px;
+  }
+
+  .content p {
+    font-size: 10px;
+    line-height: 10px;
+  }
+}
+
+#red-text {
+  color: red;
+  font-weight: 700;
+}
+
+#bold-text {
+  font-weight: 700;
+  margin-top: 4px;
+}
+
+.te-amo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 1rem 10px 1rem;
+}
+
+.te-amo-box {
+  background-color: var(--color-red);
+  padding: 3px;
+  width: 100%;
+  white-space: nowrap;
+}
+
+.te-amo-inner-box {
+  font-family: "playball", sans-serif;
+  text-align: center;
+  border: 2px dashed white;
+  padding: 5px 10px;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.te-amo-quote {
+  font-family: "anton", sans-serif;
+  font-size: 1em;
+  color: var(--color-red);
+}
+
+@media (max-width: 430px) {
+  .te-amo-inner-box {
+    font-size: 30px;
+  }
+
+  .te-amo-quote {
+    font-size: 14px;
+  }
+}
+
+.declaration {
+  color: #000;
+  font-family: "anton", sans-serif;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0.2rem 1rem 0.2rem 1rem;
+  white-space: nowrap;
+}
+
+@media (max-width: 429px) {
+  .declaration {
+    font-size: 2rem;
+  }
+}
+
+.question {
+  color: #fff;
+  font-family: "playball", sans-serif;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  gap: 10px;
+}
+
+.chi-button,
+.no-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 0 22px;
+  border: 2px dashed black;
+  font-weight: bold;
+  cursor: pointer;
+  color: #000;
+  font-family: "anton", sans-serif;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  min-width: 150px; /* Mantiene el tamaño */
+  text-align: center;
+}
+
+.chi-button:hover, .no-button:hover {
+  background-color: var(--color-red);
+  color: white;
+}
+
+/* Ajusta el tamaño de la letra en pantallas más pequeñas */
+@media (max-width: 600px) {
+  .chi-button,
+  .no-button {
+    font-size: 5vw;
+  }
+}
+
+.container-note {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  max-width: 600px;
+}
+
+.container-note img {
+  width: 35%;
+  height: 35%;
+}
+
+.content-note h2 {
+  color: #000;
+  font-family: "anton", sans-serif;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+}
+
+.content-note p {
+  color: #000;
+  font-family: "Noto Serif";
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+  line-height: 12px;
+}
+
+#grand-text {
+  color: var(--color-red);
+  font-family: "anton", sans-serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-top: -5px;
+  white-space: nowrap;
+}
+
+@media (max-width: 429px) {
+  .content-note h2 {
+    white-space: nowrap;
+    font-size: 15px;
+  }
+  #grand-text {
+    font-size: 32px;
+  }
+  .container-note img {
+    width: 40%;
+    height: 40%;
+  }
+}
+
+h3 {
+  color: #000;
+  font-family: "Noto Serif";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+  margin: .2rem;
+}
+
+.footer-text {
+  color: white;
+  font-family: "Noto Serif";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+  margin: 0;
+  padding: .5rem;
+}
+
+.footer-text span {
+  font-weight: 700;
+}
+
+@media (max-width: 429px) {
+  .footer-text {
+    font-size: 11px;
+  }
+}
+
