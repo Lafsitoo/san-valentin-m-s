@@ -3,17 +3,17 @@ import Title from "./assets/title.png";
 import Left from "./assets/left.png";
 import Right from "./assets/right.png";
 import Heart from "./assets/heart.svg";
-import GifOne from "./assets/hugs-and-kisses-snoopy.gif";
-import GifTwo from "./assets/love-you-sissy.gif";
-import GifThree from "./assets/love-you.gif";
+import GifOne from "./assets/love1.gif";
+import GifTwo from "./assets/love2.gif";
+import GifThree from "./assets/love3.gif";
 import { useState} from "react";
-import GifSadOne from "./assets/goal.gif"
-import GifSadTwo from "./assets/sorry.gif"
-import GifSadThree from "./assets/cat-crying-cat.gif"
+import GifSadOne from "./assets/sad1.gif"
+import GifSadTwo from "./assets/sad2.gif"
+import GifSadThree from "./assets/sad3.gif"
 
 function App() {
   const messages = [
-    "¿Segura? 😢",
+    "¿Seguro? 😢",
     "¿Por qué dices que no? 💔",
     "Piénsalo bien... 🥺",
     "Me romperás el corazón... 💀",
@@ -21,8 +21,8 @@ function App() {
     "Voy a llorar... 😭💔",
   ];
 
-  const [noText, setNoText] = useState("ÑO 💔");
-  const [siText, setSiText] = useState("CHI ❤️");
+  const [noText, setNoText] = useState("NO 💔");
+  const [siText, setSiText] = useState("SHI ❤️");
   const [clickCount, setClickCount] = useState(0);
   const [showNoButton, setShowNoButton] = useState(true);
   const [isSad, setIsSad] = useState(false);
@@ -34,13 +34,13 @@ function App() {
       setIsSad(true);
     } else {
       setShowNoButton(false);
-      setSiText("NO TE QUEDA DE OTRA QUE DECIR CHI ❤️");
+      setSiText("NO TE QUEDA DE OTRA QUE DECIR SHI ❤️");
     }
   };
 
   const handleSiClick = () => {
     setIsSad(false);
-    setSiText("❤️😭✨ YEEIIIIII ✨😭❤️");
+    setSiText("❤️😭✨ WIIIII ✨😭❤️");
   }
 
   return (
@@ -54,7 +54,7 @@ function App() {
       <hr />
 
       <div className="details-container">
-        <span>México-Argentina</span>
+        <span>México-Chile</span>
         <span>Febrero 14, 2025</span>
       </div>
 
@@ -78,7 +78,7 @@ function App() {
         <div className="content">
           <h2>¡ERES LA PERSONA INDICADA! ✨</h2>
           <p>
-            Se ha descubierto que <span id="red-text">Romeli</span> es la
+            Se ha descubierto que <span id="red-text">Matty</span> es la
             persona más especial del universo. Su sonrisa tiene el poder de
             iluminar cualquier día, su ternura derrite corazones y su presencia
             convierte lo cotidiano en algo mágico. Fuentes cercanas confirman
@@ -97,14 +97,14 @@ function App() {
           <p>
             Se ha reportado un caso inesperado de robo… ¡de corazón! Según
             testigos, la víctima no mostró resistencia y, de hecho, parece estar
-            felizmente enamorado. Se cree que la responsable de este
+            felizmente enamorada. Se cree que el responsable de este
             &quot;delito&quot; posee una belleza inigualable, una dulzura
             indescriptible y una sonrisa capaz de conquistar el mundo entero.
-            Aunque no hay intención de recuperar el corazón perdido, el afectado
+            Aunque no hay intención de recuperar el corazón perdido, la afectada
             ha declarado públicamente:
           </p>
           <p id="bold-text">
-            “Si este es el crimen, que me condenen a amarla por siempre.” ❤️
+            “Si este es el crimen, que me condenen a amarlo por siempre.” ❤️
           </p>
         </div>
         <img src={isSad ? GifSadThree :GifTwo} alt="gif" className="image-box" />
@@ -151,16 +151,16 @@ function App() {
             una página dorada en mi historia, y solo quiero seguir escribiendo
             contigo.
           </p>
-          <p id="grand-text">te amo muuusho</p>
+          <p id="grand-text">te amo muuucho</p>
         </div>
       </div>
 
       <hr />
 
-      <h3>❤️ R&A - I will love you forever ❤️</h3>
+      <h3>❤️ M&S - I will love you forever ❤️</h3>
       <div className="banner">
         <span className="footer-text">
-          Detallito humilde creado con musho amor por Ari, para su persona
+          Detallito humilde creado con mucho amor por Sandi, para su persona
           especial y que ama con todo su corazón. Si lees esto <span>¿Quieres casarte
           conmigo?
         </span></span>
